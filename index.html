@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chat App</title>
+   <meta http-equiv="X-Frame-Options" content="ALLOW-FROM https://yourwordpresssite.com">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="chat-container chat-container-collapsed">
+      <div class="chat-header chat-header-collapsed">
+         <div class="chat-title">
+            <div class="chat-title-first-row">
+               <button type="button" class="options-icon"><img src="images/icons/options.svg" alt="options"></button>
+               <img src="images/icons/logo-orange.png" alt="Header Logo" class="chat-header-title-logo">
+               <button type="button" class="chat-back"><img src="images/icons/arrow-back.svg" alt="arrow-back"></button>
+               <h2 class="chat-title-title">Diversified Nurse Consultants</h2>
+               <div class="chat-header-right-actions">
+                  <button type="button" class="chat-header-collapse"><img src="images/icons/collapse-minus.svg"
+                        alt="collapse"></button>
+                  <button type="button" class="chat-header-close"><img src="images/icons/close-x.svg"
+                        alt="Close"></button>
+               </div>
+            </div>
+            <p class="chat-title-paragraph">Start a chat to get immediate answers to your questions, personalized
+               guidance, and support tailored to
+               your needs. Chat with us now for quick and friendly assistance.</p>
+         </div>
+      </div>
+
+      <div class="chat-body">
+         <div class="chat-date small-text">Today</div>
+         <div class="message-assistant-container">
+            <div class="message message-assistant message-left">
+               <div class="message-assistant-logo message-assistant-logo-after">
+                  <img src="images/icons/logo-white.png" alt="Consultants Logo" class="message-logo">
+               </div>
+               <div class="message-assistant-logo message-assistant-logo-initial">
+                  <img src="images/icons/logo.png" alt="Consultants Logo" class="message-logo">
+               </div>
+               <div class="message-assistant-info">
+                  <span id="diversified">Diversified Nurse Consultants</span>
+                  <p class="message-assistant-text text">Hi, How can I help you?</p>
+               </div>
+            </div>
+            <div class="message-assistant-small small-text">
+               Bot · <span id="message-time">1h</span> ago
+            </div>
+         </div>
+         <!-- Option buttons below the message -->
+         <div class="chat-options user-messages">
+            <button type="button" id="button-consultant" class="chat-option text message message-right">Chat with
+               consultant</button>
+            <button type="button" id="button-services" class="chat-option text message message-right">Learn more about
+               services</button>
+            <button type="button" id="button-support" class="chat-option text message message-right">I'm a customer and
+               need support</button>
+         </div>
+         <form class="chat-input-form chat-input-form-collapsed">
+            <input type="text" placeholder="Your answer..." class="chat-input">
+            <button type="submit" class="send-button">
+               <img src="images/icons/arrow-send.svg" alt="Send">
+            </button>
+         </form>
+      </div>
+      <div class="chat-consultation">
+         <p class="consultation-text">Click here to book your session and get the personalized help you need.
+         </p>
+         <a href="https://dnconsult.org/book-your-call/" class="consultation-button button">Book a consultation</a>
+      </div>
+   </div>
+   <button class="collapse-button"> <!-- Orange Circle Button -->
+      <img src="images/icons/chat-icon.svg" alt="Collapse">
+   </button>
+   <script src="js/script.js" type="module"></script>
+   <script src="js/assistant.js" type="module"></script>
+</body>
+
+</html>
