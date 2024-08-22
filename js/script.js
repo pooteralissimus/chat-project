@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
    chatInputForm.addEventListener('submit', async function (e) {
       e.preventDefault()
-      const userInput = chatInput.value.trim()
+      const userInput = chatInput.value.tr()
       if (userInput) {
          displayMessage(userInput, true)
          saveMessageToHistory(userInput, true)
